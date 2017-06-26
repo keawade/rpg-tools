@@ -21,7 +21,8 @@ const App = (props: {}) => {
         style={{
           backgroundImage: `url(${backgroundImage})`,
           backgroundPositionX: 'center',
-          backgroundSize: 'cover'
+          backgroundSize: 'cover',
+          backgroundAttachment: 'fixed',
         }}
       >
         <Container>
@@ -32,7 +33,7 @@ const App = (props: {}) => {
             </Menu>
             <Segment>
               <Route exact path='/' component={Home} />
-              <Route exact path='/dice' component={Dice} />
+              <Route exact path='/dice' component={Dice as any} />
             </Segment>
           </div>
         </Container>
