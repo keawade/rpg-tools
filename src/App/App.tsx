@@ -9,8 +9,8 @@ import {
   Segment,
 } from 'semantic-ui-react';
 
-import Home from './Home';
-import Dice from './Dice';
+import Home from '../Home';
+import Dice from '../Dice';
 
 const backgroundImage = require('./fantasy-landscape.png');
 
