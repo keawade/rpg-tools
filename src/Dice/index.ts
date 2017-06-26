@@ -1,3 +1,3 @@
-import Dice from './Dice';
+import DiceContainer from './DiceContainer';
 
-export default Dice;
+export default DiceContainer;

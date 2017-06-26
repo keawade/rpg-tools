@@ -13,7 +13,7 @@ interface IDiceState {
   rollHistory: IRollResponse[];
 }
 
-class Dice extends React.Component<any, IDiceState> {
+class DiceContainer extends React.Component<any, IDiceState> {
   constructor(props: {}) {
     super(props);
 
@@ -58,4 +58,4 @@ class Dice extends React.Component<any, IDiceState> {
   }
 }
 
-export default Dice;
+export default DiceContainer;
