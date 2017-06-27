@@ -1,7 +1,10 @@
 import * as moment from 'moment';
+import Random = require('random-js');
+
+const randomEngine = Random.engines.mt19937().autoSeed();
 
 export const rollOne = (faces: number = 6) => {
-  return Math.ceil(Math.random() * faces);
+  return Random.die(faces)(randomEngine);
 };
 
 export const roll = (faces: number, quantity: number = 1): IRollResponse => {

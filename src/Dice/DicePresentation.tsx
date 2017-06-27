@@ -36,7 +36,7 @@ const DicePresentation: React.StatelessComponent<IDicePresentationProps> = (prop
         <Accordion defaultActiveIndex={0}>
           <Accordion.Title>
             <Icon name='dropdown' />
-            Rolls
+            Common Rolls
           </Accordion.Title>
           <Accordion.Content>
             <div className='dice-buttons'>

@@ -1,11 +1,7 @@
 import * as React from 'react';
 
 import DicePresentation from './DicePresentation';
-
-import {
-  roll,
-} from '../utils';
-
+import { roll } from '../utils';
 interface IDiceState {
   faces: number;
   historyLength: number;
