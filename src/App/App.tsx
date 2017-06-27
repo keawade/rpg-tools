@@ -28,7 +28,7 @@ const App = (props: {}) => {
         <Container>
           <div className='App'>
             <Menu stackable>
-              <Menu.Item><Link to='/'>Home</Link></Menu.Item>
+              <Menu.Item header><Link to='/'>RPG Tools</Link></Menu.Item>
               <Menu.Item><Link to='/dice'>Dice</Link></Menu.Item>
             </Menu>
             <Segment>

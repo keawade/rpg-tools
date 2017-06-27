@@ -1,0 +1,11 @@
+.dice-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.dice-buttons > .ui.button {
+  min-width: calc((100% / 6) - 1rem);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
