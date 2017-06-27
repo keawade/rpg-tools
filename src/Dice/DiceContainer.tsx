@@ -25,8 +25,8 @@ class DiceContainer extends React.Component<any, IDiceState> {
     };
   }
 
-  handleRoll = () => {
-    const { faces, historyLength, quantity, rollHistory } = this.state;
+  handleRoll = (faces: number, quantity: number) => {
+    const { historyLength, rollHistory } = this.state;
     try {
       this.setState({
         rollHistory: [roll(faces, quantity), ...rollHistory.filter((h, i) => (i < historyLength - 1))]

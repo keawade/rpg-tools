@@ -1,3 +1,5 @@
+import * as moment from 'moment';
+
 export const rollOne = (faces: number = 6) => {
   return Math.ceil(Math.random() * faces);
 };
@@ -5,7 +7,7 @@ export const rollOne = (faces: number = 6) => {
 export const roll = (faces: number, quantity: number = 1): IRollResponse => {
   const rolls = new Array(quantity).fill(0).map(() => (rollOne(faces)));
   const rollResponse = {
-    date: Date.now(),
+    date: moment(),
     roll: `${quantity}d${faces}`,
     values: rolls,
     total: rolls.reduce((prev, curr) => (prev + curr)),

@@ -1,5 +1,5 @@
 interface IRollResponse {
-  date: number;
+  date: any,
   roll: string,
   values: number[];
   total: number;
